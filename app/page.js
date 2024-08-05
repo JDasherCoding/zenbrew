@@ -1,7 +1,14 @@
 "use client";
-
-import Hero from "@/components/Hero";
 import { useEffect } from "react";
+
+// Components
+import About from "@/components/About";
+import Explore from "@/components/Explore";
+import Hero from "@/components/Hero";
+import Menu from "@/components/Menu";
+import Testomonials from "@/components/Testomonials";
+import OpeningHours from "@/components/OpeningHours";
+
 const Home = () => {
 	// TODO: Add Locomitve Scroll
 	useEffect(() => {
@@ -16,8 +23,12 @@ const Home = () => {
 	return (
 		<div className="h-full overflow-x-hidden">
 			<Hero />
-			{/* Temporary Div */}
-			<div className="h-[4000px]"></div>
+			<Explore />
+			<About />
+			<Menu />
+			<OpeningHours />
+			<Testomonials />
+			{/* <div className="h-[4000px]"></div> */}
 		</div>
 	);
 };
