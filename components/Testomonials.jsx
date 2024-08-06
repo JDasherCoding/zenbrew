@@ -38,7 +38,7 @@ const Testomonials = () => {
 	return (
 		<section className="h-[60vh] xl:h-[70vh]">
 			<div className="container mx-auto h-full flex items-center">
-				<Swiper navigation={true} modules={[Navigation]} className="w-[400px]">
+				<Swiper navigation={true} modules={[Navigation]} className="">
 					{testimonials.map((person, index) => {
 						return (
 							<SwiperSlide key={index} className="w-full h-full">
